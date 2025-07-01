@@ -1,13 +1,17 @@
-os: linux
-language: generic
-dist: focal
+# os: linux
+# language: generic
+# dist: focal
+
+# vm:
+#   create:
+#     name: 300K-30-i2
+
+# script:
+#   - echo "Creating custom file"
+#   - sudo mkdir /my-custom-dir
+#   - echo "Test custom image!" | sudo tee /my-custom-dir/my_custom_file.txt
+#   - sudo cat /my-custom-dir/my_custom_file.txt
 
 vm:
-  create:
+  use:
     name: 300K-30-i2
-
-script:
-  - echo "Creating custom file"
-  - sudo mkdir /my-custom-dir
-  - echo "Test custom image!" | sudo tee /my-custom-dir/my_custom_file.txt
-  - sudo cat /my-custom-dir/my_custom_file.txt
